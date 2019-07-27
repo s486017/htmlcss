@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+ul { color:darkgray; list-style-type:upper-roman; }
+ul { background-color:darkgray; list-style-type:lower-alpha; }
+
+h1 { color: black; }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>폰트 CSS 속성</title>
+</head>
+<body>
+    <pre>
+구글에서 "나눔고딕 폰트" 로 검색로 후 설치 
+구글에서 "웹 무료 폰트" 로 검색 'http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff' 
+    </pre>
+
+    <h2>내부 폰트를 사용하는 텍스트 !!!</h2>
+    <p> serif font 적용 전: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    <p id="font1"> serif font 적용 후: serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    
+    <p> 변경전: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    <p id="font2"> 변경후: 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+    <hr>
+
+    <h2>@import를 사용한 외부 폰트 사용. 나눔브러쉬 폰트 사용</h2>
+    <div>나눔고딕   폰트 : http://fonts.googleapis.com/earlyaccess/nanumgothic.css </div>
+    <div>나눔브러쉬 폰트 : http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css</div>
+    <p> 변경전: @import를 사용한 텍스트 !!! </p>
+    <p id="font3"> 변경후: @import를 사용한 텍스트 !!! </p>
+
+    <h2>@font-face를 사용한 외부 폰트 사용. 나눔 바른 고딕 폰트 사용</h2>
+    <div>나눔 바른 고딕 폰트 : http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff </div>
+    <p> 변경전: @font-face를 사용한 텍스트 !!!</p>
+    <p id="font5"> 변경후: @font-face를 사용한 텍스트 !!! </p>
+    <hr>
+
+
+    <h2>font-size 설정 : 단위: px, %(부모 태그를 기준으로), em(대문자M을 기준으르) </h2>
+    <p> font-size 속성 적용 전 . M </p>
+    <p class = "size1"> font-size 속성 값 : px </p>
+    <p class = "size2"> font-size 속성 값 : % </p>
+    <p class = "size3"> font-size 속성 값 : em </p>
+
+
+    <h2>font-style 설정</h2>
+    <p class = "no1"> font-style 속성 값 : normal </p>
+    <p class = "no2"> font-style 속성 값 : italic </p>
+    <p class = "no3"> font-style 속성 값 : oblique </p>
+</body>
+</html>
