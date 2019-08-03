@@ -8,19 +8,48 @@
 
     <!--form 태그-->
     <h2>네이버에서 "멕시코" get으로 검색 요청하기</h2>
-    https://search.naver.com/search.naver?query=멕시코
+    https://search.naver.com/search.naver?query=멕시코    
+
+    <form action="https://search.naver.com/search.naver" method="get">
+        <input type="text" name="query" id="" value="멕시코">
+        <input type="text" name="name" id="" value="">
+        <input type="submit" value="전송">
+    </form>
+
     <hr />
 
     <h2>다음에서 "멕시코" get으로 검색 요청하기</h2>
     https://search.daum.net/search?q=멕시코
 
+    <form action="https://search.daum.net/search" method="get">
+        <input type="text" name="q" id="" value="">
+        <input type="submit" value="전송">
+    </form>
+    
+    <hr />
+    
+    <h2>구글에서 "멕시코" get으로 검색 요청하기</h2>
+    https://www.google.com/search?q=멕시코
+    <form action="https://www.google.com/search" method="get">
+        <input type="text" name="q" id="" value="">
+        <input type="submit" value="전송">
+    </form>
+    
     <hr />
 
     <h2>네이버에서 "멕시코" post로 요청하기</h2>
+    <form action="https://search.naver.com/search.naver" method="post">
+        <input type="text" name="query" id="" value="멕시코">
+        <input type="text" name="name" id="" value="">
+        <input type="submit" value="전송">
+    </form>
     <hr />
 
-    <h2>구글에서 "멕시코" get으로 검색 요청하기</h2>
-    https://www.google.com/search?q=멕시코
+
+
+
+    
+    
 
 </body>
 </html>

@@ -7,3 +7,53 @@
 | 소개 |                          |
 +---------------------------------+
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+            border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+        }
+        th, td {
+            width:150px;  /* 셀 너비 */
+            padding:5px;  /* 셀 패딩(테두리와 내용 사이의 여백) */
+        }
+        caption {
+            font-size:20px;  /* 표 설명글 글자 크기 */
+            margin:10px;  /* 표 설명글 주변 여백 */
+            font-weight:bold;  /* 표 설명글 글자 굵게 */
+        }
+    </style>
+</head>
+<body>
+    <table>        
+        <tbody>
+            <tr>
+                <th>이름</th>
+                <td>홍길동</td>
+                <th>연락처</th>
+                <td>03</td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="3">서울시</td>
+                <!-- <th></th>
+                <td></td> -->
+            </tr>
+            <tr>
+                <th>소개</th>
+                <td colspan="3">친구가</td>
+                <!-- <th></th>
+                <td></td> -->
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

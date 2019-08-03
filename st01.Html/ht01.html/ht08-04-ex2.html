@@ -7,8 +7,9 @@
         label {width: 100px; display: inline-block; vertical-align:top; }
         div {display:table; margin-left:auto; margin-right:auto; }
         .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
+        input[type='number'] { width:60px; }		        
 		ul > li { list-style-type:none; }
+        .btn-margin-5px {  margin: 5px; }
     </style>
 </head>
 <body>
@@ -22,5 +23,38 @@
 		  다시작성 : form 입력 값 초기화
 	  -->
     <h1>상품 주문서</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <ul>
+                <li><label for="a1">이름</label><input type="text" name="" id="a1" placeholder="이름을 입력하세요"></li>
+                <li><label for="a2">연락처</label><input type="text" name="" id="a2" placeholder="연락처를 입력하세요"></li>               
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li><label for="b1">주소</label><input type="text" name="" id="b1" required></li>
+                <li><label for="b2">전화번호</label><input type="text" name="" id="b2" required></li>
+                <li><label for="b3">메모</label><textarea name="" id="b3" cols="30" rows="5"></textarea></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문 정보</legend>
+            <ul>
+                <li><input type="checkbox" name="" id="c11" checked><label for="c11" class="orderinfo">과테말라 안티구아 (100g)</label> <input type="number" name="" id="c21"><label for="c12">개</label></li>
+                <li><input type="checkbox" name="" id="c21"><label for="c21" class="orderinfo">인도네시아 만델링 (100g)</label> <input type="number" name="" id="c22"><label for="c22">개</label></li>
+                <li><input type="checkbox" name="" id="c31"><label for="c31" class="orderinfo">탐라는도다(블렌딩) (100g)</label> <input type="number" name="" id="c32"><label for="c22">개</label></li>
+            </ul>
+        </fieldset>
+    
+        <div>
+            <input class="btn-margin-5px" type="submit" value="주문하기">
+            <input class="btn-margin-5px" type="reset" value="다시작성">
+        </div>
+        
+    </form>
+    
 </body>
 </html>
+
