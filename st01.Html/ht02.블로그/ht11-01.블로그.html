@@ -5,49 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        /* * {
+            border: 1px solid black;            
+        }         */
+        
+        a:link { color: black; text-decoration: none;}
+        a:visited { color: black; text-decoration: none;}
+        a:hover { color: red; text-decoration: none;}
+
+        /* BG-color */
+        /* header { background-color: cadetblue;}
+        nav { background-color:cornflowerblue;}
+        #wrap-body {background-color: darkgoldenrod}
+        aside {background-color: darkolivegreen}
+        footer {background-color: darkgray} */
+
+        /* layout & style */
+        /* layout-menu */
+        nav {height: 30px;}
+        #gnb {float: left; list-style-type:none;}
+        #menu {display: inline-block; margin-top: 0; margin-bottom: 0;}
+        .menu-item { display: inline-block; }        
+        #search {float: right;}
+
+        #gnb, #search {vertical-align: middle}
+
+        /* layout-content */
+    
+        #wrap-body {clear: both; float: left; list-style-type:none; }
+
+        #content-body {width: 62%; display: inline-block;}
+        aside {float: right; width: 36% ;  }
+
+        /* layout in the content */
+        #content-img {max-width:100%; height:auto}
+        aside>ul {list-style-type:none;}
+
+        /* layout-footer */
+
+        footer {clear: both;}
+
+
+    </style>
 </head>
 <body>
 
-    <h1>HTML5 Example Preview</h1>
+    <header>
+        <h1>HTML5 Example Preview</h1>
+        <h2>한빛아카데미</h2>
+    </header>
+    <hr>
+    <nav>
+        <div id="gnb">
+            <ul id="menu">
+                <li class="menu-item"><a href=""> HTML5</a></li>
+                <li class="menu-item"><a href=""> CSS3</a></li>
+                <li class="menu-item"><a href=""> JavaScript</a></li>
+            </ul>        
+        </div>
+        <div id="search">
+            <form  action="" method="get" >
+                <input type="text" name="" id="" >
+                <input type="submit" value="검색">
+            </form>
+        </div>        
+    </nav>
+    <hr>
+    <div id="wrap-body">
+        <seaction id="content-body">
+            <h2>HTML5 개요와 활용</h2>
+            <p>2013년 02월 14일</p>
+        
+            <img id="content-img" src="http://placehold.it/430x280" alt="">
+        
+             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.</p>
+            
+            
+            <p>Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.</p>
 
-    <h2>한빛아카데미</h2>
+        </seaction>
+        <aside>        
+            <h2>카테고리</h2>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+            </ul>
+            
+            <h2>최근 글</h2>
+            <ul>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>
+                <li><a href="#" target="_blank" rel="noopener noreferrer">데이터</a></li>    
+            </ul>
+    
+        </aside>
+    </div>
+    <hr>
+    <footer>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Created By Team-HeXagon</a>
+    </footer>
 
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-    </ul>
-
-    <form action="" method="get">
-        <input type="text" name="" id="">
-        <input type="submit" value="검색">
-    </form>
 
 
- 
-    <h2>HTML5 개요와 활용</h2>
-
-    <p>2013년 02월 14일</p>
-
- 이미지: http://placehold.it/430x280
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo justo ac lorem pretium vitae rhoncus lectus ullamcorper. Aliquam facilisis euismod diam sollicitudin commodo. Nunc sagittis sapien venenatis lorem vestibulum cursus pellentesque mi sodales. Donec pellentesque hendrerit turpis, vitae tempor nibh ultricies at. Aliquam consequat rutrum erat, vel sodales tellus sagittis at. Proin sollicitudin augue eu augue vehicula vitae bibendum odio porta. Aliquam elit arcu, venenatis in imperdiet ut, scelerisque non dolor. Donec in vulputate tortor. Fusce egestas rutrum mi quis ultricies. Vivamus blandit augue ac felis ullamcorper consectetur. Curabitur pretium fringilla neque, vitae cursus massa auctor vitae. Integer non massa sit amet lacus accumsan blandit. Vivamus fermentum tellus at justo iaculis eu tempus lorem venenatis. Suspendisse quis eros consectetur tellus posuere commodo. In hac habitasse platea dictumst.
-
-
-Praesent orci quam, ornare sed scelerisque ac, porta a justo. Pellentesque quis magna sed magna vehicula semper ac ut enim. Duis ut mattis ligula. Mauris at sem elit. Vestibulum justo tortor, malesuada non tincidunt quis, feugiat ut metus. Maecenas varius neque ut diam ultrices scelerisque. Praesent lectus massa, tincidunt vel adipiscing non, vehicula ut magna. Cras quis lacinia ipsum. Sed consequat consectetur volutpat. Integer sed tortor risus. Donec accumsan ante vel justo porttitor volutpat.
-
-카테고리
-데이터
-데이터
-데이터
-데이터
-데이터
-최근 글
-데이터
-데이터
-데이터
-데이터
-Created By Team-HeXagon
 
 
 

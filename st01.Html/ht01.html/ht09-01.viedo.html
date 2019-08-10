@@ -8,13 +8,44 @@
         body {
             margin-top:20px;
             margin-left:50px;
+        }        
+        #beach {
+            height: 150px;
+            width: 200px
         }
+        .beach {
+            height: 150px;
+            width: 200px
+        }
+
+    </style>
+    
     </style>
 </head>
 <body>
     <h2>페인팅 동영상. Painting.mp4</h2>
+    <video src="../media/Painting.mp4" controls></video>
+
     <hr>
     
     <h2>해변 동영상. Beach.mp4. 너비는 200px, 높이는 150px</h2>
+    <!-- 
+        높이, 너비 지정
+        1. width, height 지정
+        2. inline css 방식(style 속성)
+        3. 내부 스타일 방식 (style 태그 사용)
+     -->
+    <h3>width, height 지정</h3>
+    <video src="../media/Beach.mp4" height="150px" width="200px" controls></video>
+
+    <h3>inline css 방식(style 속성)</h3>
+    <video src="../media/Beach.mp4" style="height: 150px; width: 200px" controls></video>
+
+    <h3>내부 스타일 방식 (style 태그 사용 : id속성 , class 속성 사용)</h3>    
+    <video src="../media/Beach.mp4" id="beach" controls></video>
+    <video src="../media/Beach.mp4" class="beach" controls></video>
+    
+
 </body>
 </html>
+
