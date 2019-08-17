@@ -3,6 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        * { 
+            /* css 초기화 */
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            background-color: red;
+        }
+
+        #aside {
+            background-color: aqua;
+            float: left;
+            width: 200px;
+        }
+
+        #content {
+            background-color: darkgreen;
+            float: right;
+            width: calc(100% - 200px);
+        }
+    </style>
 </head>
 <body>
     <div id="header"><h2>#header 태그</h2></div>
@@ -11,4 +33,4 @@
         <div id="content"><h2>#content 태그</h2></div>
     </div>
 </body>
-</html>
+</html>
