@@ -3,6 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
+    <style>
+         div {
+              border-radius: 20px;
+              text-align: center;
+              line-height: 100px;
+         }
+
+         /* inset일때는 기준점이 다르다1!!! */
+         .box1 { box-shadow: +20px -20px 0 red; }
+         .box2 { box-shadow: +20px -20px 0 red inset; }  
+         .box3 { box-shadow: +20px +20px 5px red; }
+         .box4 { box-shadow: +20px +20px 5px red inset; }
+
+    
+    </style>
 </head>
 <body>
 
@@ -27,4 +42,4 @@
     </div>
     
 </body>
-</html>
+</html>

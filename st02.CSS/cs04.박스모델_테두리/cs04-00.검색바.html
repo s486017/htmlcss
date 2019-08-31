@@ -3,6 +3,42 @@
 <head>
     <meta charset="utf-8">
     <title>둥근 검색 바 만들기</title>
+    <style>
+        * {
+         padding: 0;
+         margin: 0;   
+        }
+        input {
+            vertical-align: top;
+        }
+        input.input-search {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 28px;
+            border: 1px solid grey;
+            text-indent: 12px;
+            float: left;
+        }
+        input.input-search:focus {
+            outline: none;
+        }
+        input.input-search::after {clear:both; display:block; content:''; }
+
+        input.input-search-submit {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: lightgray;
+            height: 30px;
+            width: 50px;
+            outline: 0;
+            border: 1px solid grey;
+            border-left: 0px;
+
+        }
+        input.input-search-submit:hover {
+            box-shadow: 1px 1px 1px gray;
+        }
+    </style>
 </head>
 <body>
     <pre>

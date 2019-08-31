@@ -3,6 +3,24 @@
 <head>
     <meta charset="utf-8">
     <title>border radius</title>
+    <style>
+
+        img, div#bg {
+            border: 2px solid red;
+            border-radius: 20px;
+        }
+
+        div {
+            float: left;
+        }
+        div::after {clear:both; display:block; content:'';}
+/* 
+        div#bg {
+            border: 2px solid red;
+            border-radius: 20px;
+        } */
+    
+    </style>
 </head>
 <body>
         <h2>border radius</h2>
@@ -11,4 +29,4 @@
         <div id="bg" style="width:250px;height:268px; background-image: url(../images/pic3.jpg);">
         </div>
 </body>
-</html>
+</html>

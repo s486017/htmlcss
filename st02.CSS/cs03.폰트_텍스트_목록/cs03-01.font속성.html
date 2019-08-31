@@ -3,6 +3,20 @@
 <head>
     <meta charset="utf-8">
     <title>폰트 CSS 속성</title>
+    <style>
+        p#font1 {
+            font-family: serif,"맑은 고딕";
+        }
+        p#font2 {
+            font-family:  "나눔고딕", "맑은 고딕";
+        }
+        
+        p.size1 { font-size: 24px; }
+        p.size2 { font-size: 200%; }
+        p.size3 { font-size: 3em; 
+        /* color: #1f3c94 */
+        }
+    </style>
 </head>
 <body>
     <pre>
@@ -32,10 +46,11 @@
 
 
     <h2>font-size 설정 : 단위: px, %(부모 태그를 기준으로), em(대문자M을 기준으르) </h2>
+    <p>font size는 default 값이 16px</p>
     <p> font-size 속성 적용 전 . M </p>
-    <p class = "size1"> font-size 속성 값 : px </p>
-    <p class = "size2"> font-size 속성 값 : % </p>
-    <p class = "size3"> font-size 속성 값 : em </p>
+    <p class = "size1"> font-size 속성 값 : 24px </p>
+    <p class = "size2"> font-size 속성 값 : 200% </p>
+    <p class = "size3"> font-size 속성 값 : 3em </p>
 
 
     <h2>font-style 설정</h2>

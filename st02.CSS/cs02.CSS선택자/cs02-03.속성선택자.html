@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>CSS3 Selector Basic Page</title>
+    <style>
+        input {background-color: whitesmoke;}
+        input[type="text"] {background-color: red;}    
+        input[type="password"] {background-color: blue;}    
+        input[disabled] {background-color: lightgrey;}
+        input:focus {background-color: rgb(208, 232, 240);}
+
+        [value] {background-color: green;}
+    </style>
 </head>
 <body>
     <input type="text" />
@@ -16,4 +25,4 @@
 
     <p type="text" name="password" value="findme" >  abc </p>
 </body>
-</html>
+</html>

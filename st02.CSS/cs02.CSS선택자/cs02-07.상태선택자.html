@@ -10,6 +10,34 @@
         */
         
         /* 브라우저 스타일 초기화 */
+        * {margin: 0; padding: 0;}
+        ul { list-style: none;} 
+        li {
+            float: left;
+            width: 100px;
+            height: 100px;
+            /* text-align: center; */
+
+        }
+        li.list-odd{ background-color: darkred;}
+        li.list-even{ background-color: orange;}
+        li#first {
+            border-top-left-radius: 100px; 
+            border-bottom-left-radius: 100px; 
+            }
+        li#last {
+            border-top-right-radius: 20px; 
+            border-bottom-right-radius: 20px;         
+            }
+        li>div{  
+            background: #06c;
+            position: relative;
+            float: left;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            }
+
     </style>
 </head>
 <body>
@@ -31,14 +59,15 @@
             5. 마지막 li 태그를 찾고 라운드 처리
     </pre>
     <ul>
-        <li>1번째</li>
-        <li>2번째</li>
-        <li>3번째</li>
-        <li>4번째</li>
-        <li>5번째</li>
-        <li>6번째</li>
-        <li>7번째</li>
-        <li>8번째</li>
+        <li id="first" class="list-odd"><div>1번째</div> </li>
+        <li class="list-even"><div>2번째1111<br>11111</div></li>
+        <li class="list-odd"><div>3번째</div></li>
+        <li class="list-even"><div>4번째</div></li>
+        <li class="list-odd"><div>5번째</div></li>
+        <li class="list-even"><div>6번째</div></li>
+        <li class="list-odd"><div>7번째</div></li>
+        <li id="last" class="list-even"><div>8번째</div></li>
     </ul>
 </body>
-</html>
+</html>
+

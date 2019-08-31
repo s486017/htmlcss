@@ -3,6 +3,174 @@
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+    <style>
+        /* 공통 */
+        * { margin: 0; padding: 0}
+        body {
+            font-family: '맑은 고딕';
+            background-color : #e6e6e6;
+        }
+        div#page-wrapper {
+            width: 960px;         
+            height: calc(100%+10px);
+            background-color : white;
+            padding: 20px;                        
+            margin : 20px auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #000000;
+        }
+        hr {margin: 10px 0 10px 0;}
+        a:link, a:visited, a:active, a:hover {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        /* header  */
+        header#main-header {
+            /* margin-left: 50px; */
+            margin: 50px;
+            /* margin-bottom: 50px; */
+        }
+        h1 {
+            margin-bottom: 0px;
+        }
+        
+        .master-description {
+            font-size: 15px;
+            margin-top: 0px;
+        }
+
+        /* navigation */
+
+
+        /* 1) 메뉴 */
+        ul {
+            list-style: none;
+        }
+
+        nav#main-navigation {
+            height: 24px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 24px;
+            /* vertical-align: middle; */
+
+        }
+
+        .outer-menu-item{
+            width: 100px;
+            float: left;
+        }
+
+        .inner-menu {
+            display: none;
+            position: absolute;
+            border: 1px solid lightgray;
+            background-color: rgb(243, 243, 243);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+        .inner-menu>li {
+            margin: 5px;
+        }
+
+        .outer-menu-item:hover .inner-menu {
+             display: block;
+        }
+
+        /* 2) 검색바 */
+
+        div.pull-right {
+            float: right;
+        }
+
+
+        input {
+            vertical-align: top;
+        }
+        
+        input.input-search {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            height: 22px;
+            border: 1px solid grey;
+            text-indent: 12px;
+            float: left;
+        }
+        input.input-search:focus {
+            outline: none;
+        }
+
+        input.input-search-submit {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: lightgray;
+            height: 24px;
+            width: 50px;
+            outline: 0;
+            border: 1px solid grey;
+            border-left: 0px;
+
+        }
+        input.input-search-submit:hover {
+            box-shadow: 1px 1px 1px gray;
+        }
+
+        /* contents */
+
+        section#main-section {
+            width: 710px;
+            float: left;
+        }
+        aside#main-aside {
+            width: 210px;
+            float: right;
+        }
+        
+        /* content > main-section*/ 
+
+        h1.article-title, p.article-date {
+            margin: 10px;
+        }
+
+        /* content > main-aside*/ 
+        #main-aside > div > ul > li{
+            margin: 5px;
+            margin-left: 20px;
+            
+        }
+
+        #main-aside > div> h3 {
+            margin-top : 20px;
+        }
+
+        /* footer */
+
+        div#footer {
+            height: 50px;
+        }        
+        
+
+        /* conternt & footer 정렬 */
+
+        footer#main-footer {
+            float: left;
+        }        
+
+
+
+        /* etc  */
+        div.pull-right::after ,div#content::after , footer#main-footer::after{
+            clear:both; display:block; content:''; 
+        }
+        
+
+
+    
+    </style>
 </head>
 <body>
     <div id="page-wrapper">
@@ -12,6 +180,7 @@
                 <h2 class="master-description">한빛아카데미</h2>
             </hgroup>
         </header>
+        <hr>
         <nav id="main-navigation">
             <div class="pull-left">
                 <ul class="outer-menu">
@@ -54,6 +223,8 @@
                 </div>
             </div>
         </nav>
+        
+        <hr>
         <div id="content">
             <section id="main-section">
                 <article>
@@ -93,12 +264,16 @@
                 </div>
             </aside>
         </div>
-        <footer id="main-footer">
-            <a href="#">Created By Team-HeXagon</a>
-        </footer>
+        <hr>
+        <div id="footer">
+            <footer id="main-footer">
+                <a href="#">Created By Team-HeXagon</a>
+            </footer>
+        </div>
     </div>
 </body>
-</html>
+</html>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>

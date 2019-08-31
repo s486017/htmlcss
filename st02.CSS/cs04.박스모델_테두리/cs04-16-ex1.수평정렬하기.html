@@ -2,6 +2,28 @@
 <html>
 <head>
     <title>Float With Overflow</title>
+    <style>
+        @import url( http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css );
+        
+        * { font-family: "Nanum Brush Script"; }
+
+        .item {
+            height: 100px;
+            width:200px;
+            /* background-color: yellow; */
+            font-size: 20pt;
+            text-align: center;
+            line-height: 100px;
+            margin: 10px;
+            float: left;
+            border-style: dashed;
+            border-color: red black blue;
+            /* font-family: "나눔브러쉬" */
+            ;
+        }
+        .item::after {clear:both; display:block; content:''; }
+    
+    </style>
 </head>
 <body>
     <div class="container">
@@ -11,4 +33,4 @@
         <div class="item">메뉴 - 4</div>
     </div>
 </body>
-</html>
+</html>
