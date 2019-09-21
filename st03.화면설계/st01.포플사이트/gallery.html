@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 모등 페이지에서 참조하는 css는 default.css -->
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        /* 이 페이지에서만 사용되는 css를 작성 */
+        #header-left,
+        #footer-left {
+            float: left;
+        }
+
+        div#header-left::after,
+        div#footer-left::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 바뀌지 않는 header 부분 -->
+            <div id="header-left"> 
+                <ul>
+                    <li><img src="https://freeiconshop.com/wp-content/uploads/edd/apple-flat.png" alt="">  </li>
+                    <li><h2> Apple  </h2></li>
+                </ul>
+            </div>
+            <div id="header-right">
+                <!-- <div id="header-right-menu"> -->
+                    <ul>
+                        <li><a href="./index.html">홈</a> </li>
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./register1.html">회원가입</a></li>                    
+                        <li>
+                            <input type="text" placeholder="search">
+                            <img src="https://steelfort.co.nz/themes/steelfort/images/icons/search-icon.png" alt="">                                   
+                        </li>
+                    </ul>
+                <!-- </div> -->
+                <!-- <div id="header-right-search">
+                </div> -->
+
+            </div>
+        </header>
+        <nav>
+            <!-- 바뀌지 않는 menu 부분 -->
+            <ul>
+                <li>ABOUT  </li>  
+                <li>GALLERY</li>  
+                <li>OFFICE </li>  
+                <li>SERVICE</li>  
+                <li>CONTACT</li>                
+            </ul>
+        </nav>
+
+        <div id="content">
+            <!-- 바뀌는 컨텐츠 부분 -->
+            <div id="main-hero-txt">
+                <div id="main-title-sub">iPhone 11 Pro</div>
+                <div id="main-title-main">Pro cameras.<br> Pro display. <br>Pro performance.</div>
+                <div id="main-description">From twenty-four dollars and ninety-five cents per month or five hundred and ninety-nine dollars with trade in.From $24.95/mo. or $599 with trade-in.*</div>
+            </div>
+
+            <div id="main-hero-img">
+                <img src="https://images.squarespace-cdn.com/content/v1/58a87af237c581c013051602/1540707014377-93TJJS7OGZKR4AF75L0I/ke17ZwdGBToddI8pDm48kBtpJ0h6oTA_T7DonTC8zFdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIBqmMCQ1OP129tpEIJko8bi_9nfbnt8dRsNvtvnXdL8M/iphone-family-late2016-2-960.png" alt="">
+
+
+            </div>
+        </div>
+
+
+        
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li><img src="./images/home.png" alt="">    </li>   
+                    <li><img src="./images/google-plus.png" alt="">  </li>  
+                    <li><img src="./images/facebook-logo.png" alt=""></li> 
+                </ul>
+            </div>
+            <!-- 바뀌지 않는 footer 부분 -->
+            <div id="footer-right">
+                <ul>
+                    <li>031-899-9100</li>
+                    <li>㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 222-88-66666</li>
+                    <li>경기도 용인시 기흥구 용구대로 2311 경기도여성능력개발센타</li>
+                    <li>Copyright © ACG Inc. All Rights Reserved</li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+
+</html>

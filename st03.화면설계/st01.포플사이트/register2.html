@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 모등 페이지에서 참조하는 css는 default.css -->
+    <link rel="stylesheet" href="css/default.css">
+    <style>
+        /* 이 페이지에서만 사용되는 css를 작성 */
+        #regist-box {
+            height: 600px;
+            width: 800px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: black;
+            opacity: 0.9;
+        }
+
+        #regist-box input {
+
+            padding: 10px;
+            height: 30px;
+            width: 150px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        #regist-box select {
+
+            height: 50px;
+            width: 170px;
+            margin: 0px 10px 0px 10px;
+        }
+
+        #regist-box div {
+            color: white;
+            /* text-align: center; */
+            margin: 5px;
+        }
+
+        #regist-box-title {
+            text-align: center;
+            font-size: 3rem;
+            padding: 30px;
+            padding-bottom: 15px;
+        }
+
+        #regist-box-desc {
+            margin: 20px;
+        }
+
+        div#regist-yes-div {
+            height: 30px;
+            margin-top: 10px;
+
+        }
+
+        #regist-yes-div>label {
+            color: white;
+            /* text-align: left; */
+            /* float: left; */
+            margin-left: 10px;
+            width: 100px;
+            /* line-height: 30px; */
+        }
+
+        div.label {
+            color: white;
+            /* text-align: left; */
+            /* float: left; */
+            /* margin-left: 10px; */
+            padding: 2px;
+            width: 120px;
+            height: 30px;
+            float: left;
+            margin-left: 30px;
+            /* line-height: 30px; */
+        }
+
+        input#regist-yes {
+            height: 10px;
+            width: 10px;
+            margin: auto;
+            margin-left: 40px;
+
+            /* float: left; */
+            border: 1px solid #bcbcbc;
+            cursor: pointer;
+        }
+
+        div.regist-submit {
+            /* height: 50px; */
+            /* display: inline; */
+            /* text-align: center; */
+            /* float: right; */
+            /* margin-right: 35px; */
+            /* padding: 30px 10px 5px 30px; */
+        }
+
+        div.regist-submit a {
+
+            float: left;
+            /* margin-right: 35px; */
+            /* padding: 30px 10px 5px 30px; */
+        }
+
+
+
+
+
+        .regist-box-btn {
+            text-align: center;
+            /* float: left; */
+            width: 100px;
+            color: white;
+            font-size: 1.5rem;
+            background-color: #333333;
+
+            padding: 10px;
+            /* margin: auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 바뀌지 않는 header 부분 -->
+            <div id="header-left">
+                <ul>
+                    <li><img src="https://freeiconshop.com/wp-content/uploads/edd/apple-flat.png" alt=""> </li>
+                    <li>
+                        <h2> Apple </h2>
+                    </li>
+                </ul>
+            </div>
+            <div id="header-right">
+                <!-- <div id="header-right-menu"> -->
+                <ul>
+                    <li><a href="./index.html">홈</a> </li>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./register1.html">회원가입</a></li>
+                    <li>
+                        <input type="text" placeholder="search">
+                        <img src="https://steelfort.co.nz/themes/steelfort/images/icons/search-icon.png" alt="">
+                    </li>
+                </ul>
+                <!-- </div> -->
+                <!-- <div id="header-right-search">
+                </div> -->
+
+            </div>
+        </header>
+        <nav>
+            <!-- 바뀌지 않는 menu 부분 -->
+            <ul>
+                <li>ABOUT </li>
+                <li>GALLERY</li>
+                <li>OFFICE </li>
+                <li>SERVICE</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+
+
+        <div id="content">
+            <!-- 바뀌는 컨텐츠 부분 -->
+            <div id="regist-box">
+                <div id="regist-box-title">회원가입</div>
+                <div>
+                    <form>
+                        <div id="user-info-form">
+                            <div>
+                                <div class='label'>
+                                    <label for="user-name" class="user-info-input-label"> 이름 </label>
+                                </div>
+
+
+                                <input type="text" id="user-name" placeholder="이름을 입력하세요">
+                            </div>
+                            <div>
+                                <div class='label'>
+
+                                    <label for="user-id" class="user-info-input-label"> 아이디 </label>
+                                </div>
+
+                                <input type="text" id="user-id" placeholder="아이디를 입력하세요">
+                            </div>
+                            <div>
+                                <div class='label'>
+                                    <label for="user-pw1" class="user-info-input-label"> 비밀번호 </label>
+                                </div>
+                                <input type="password" id="user-pw1" class="user-password" placeholder="비밀번호를 입력하세요">
+                            </div>
+                            <div>
+                                <div class='label'>
+                                    <label for="user-pw2" class="user-info-input-label"> 비밀번호 확인 </label>
+                                </div>
+                                <input type="password" id="user-pw2" class="user-password" placeholder="비밀번호를 입력하세요">
+                            </div>
+                            <div id="phone-num">
+                                <div class='label'>
+                                    <label class="user-info-input-label"> 연락처 </label>
+                                </div>
+                                <select name="user-phone1">
+                                    <option value="010">010</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                </select> -
+                                <input type="text" id="user-phone2" class="user-info-input-phone">-
+                                <input type="text" id="user-phone3" class="user-info-input-phone">
+                            </div>
+                            <div>
+                                <div class='label'>
+                                    <label for="user-email" class="user-info-input-label"> 이메일 </label>
+                                </div>
+                                <input type="text" id="user-email1">@
+                                <input type="text" id="user-email2" placeholder="이메일을 입력하세요">
+                                <select name="email-com">
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <div class="regist-box-btn"> 중복확인 </div>
+                                </select>
+                            </div>
+                            <div class="regist-submit">
+                                <a href="./index.html">
+                                    <div class="regist-box-btn"> 가입취소 </div>
+                                </a>
+                                <a href="./index.html">
+                                    <div class="regist-box-btn"> 회원가입 </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li><img src="./images/home.png" alt=""> </li>
+                    <li><img src="./images/google-plus.png" alt=""> </li>
+                    <li><img src="./images/facebook-logo.png" alt=""></li>
+                </ul>
+            </div>
+            <!-- 바뀌지 않는 footer 부분 -->
+            <div id="footer-right">
+                <ul>
+                    <li><img src="./images/telephone-of-old-design.png" alt=""> 031-899-9100</li>
+                    <li>㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 222-88-66666</li>
+                    <li>경기도 용인시 기흥구 용구대로 2311 경기도여성능력개발센타</li>
+                    <li>Copyright © ACG Inc. All Rights Reserved</li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</body>
+
+</html>

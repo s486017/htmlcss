@@ -1,0 +1,223 @@
+/* Reset CSS  */
+
+/* Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+img,
+video {
+    max-width: 100%;
+    border: 0;
+    vertical-align: top;
+}
+
+a {
+    vertical-align: top;
+    text-decoration: none;
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+
+body {
+    background: url(http://playwares.com/files/attach/images/423601/937/505/012/9976dbf65e9300a05f9f59b6fae0854a.jpg) repeat-x lightgray;
+    background-size: cover;
+    background-position: center;    
+    background-attachment: fixed;
+    min-width : 100%;
+    min-height : 100%;    
+    font-family: 'Roboto', sans-serif, 'NanumGothicWeb', '돋움';
+    font-size: 100%;
+    line-height: 1;
+}
+
+label {
+    cursor: pointer;
+}
+
+.blind,
+legend,
+hr,
+caption {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -1000em;
+}
+
+i,
+em,
+address {
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* /////////////////////////////// */
+
+/*  공통 부분 */
+#wrap {            
+    width: 1280px;        
+    margin: auto;
+
+}
+header, footer { 
+    background-color: #333333;
+    opacity: 0.9;
+}
+
+header a, footer a {
+    color: white;
+}
+
+
+/* header 부분   */
+
+header {
+    height: 40px;
+    /* background-color: #333333;                         */
+    padding: 10px;
+    color: white;
+}
+nav {
+    height: 50px;
+    background-color: white;
+    opacity: 0.7;
+}       
+#header-left, #footer-left, #header-left li, #header-right li{
+    float: left;
+}
+
+#header-right, #header-left {
+    line-height: 40px;
+}
+
+#header-right {
+    float: right;
+}
+#header-right li{
+    width: 100px;
+}
+
+#header-right li:last-child{
+    width: 200px;
+}
+
+#header-right li>input{
+    width: 150px;
+}
+
+#header-right li>img{
+    width: 16px;
+    padding-top:12px;
+    padding-bottom:12px;
+    margin-left: 10px;
+}
+
+#header-right-search {
+    height: 40px;
+}
+
+#header-right input{
+    padding: .5em .5em; 
+}
+
+
+
+#header-left img {
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}       
+
+nav ul {
+    line-height: 50px;
+}
+
+nav li {
+    display: inline-block;            
+    width: 150px;
+    text-align: center;            
+    line-height: 50px;
+}
+
+
+
+/* footer 부분 */
+
+footer {
+    height: 140px;            
+    /* background-color: #333333;             */
+    padding: 10px;
+    color: white;            
+}
+
+#footer-left li {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    /* background-color: bisque; */
+}
+#footer-left li>img{
+    width: 20px;
+}
+
+#footer-right li>img {
+    width: 14px;
+}
+
+#footer-right {
+    float: right;
+    width: 500px;
+    text-align: right;
+    
+}
+
+#footer-right li {
+    margin-top : 10px;
+    margin-bottom : 10px;
+    margin-right : 20px;
+}
+
+div#header-left::after, div#footer-left::after, #header-right::after, #header-left li::after, #content>div::after,  #regist-yes::after, #regist-yes-div>label::after, div#regist-submit::after,
+div.label::after,
+div.regist-submit::after
+{
+    clear:both; 
+    display:block; content:'';
+}

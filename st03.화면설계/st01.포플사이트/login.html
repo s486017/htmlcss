@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 모등 페이지에서 참조하는 css는 default.css -->
+    <link rel="stylesheet" href="css/default.css">    
+    <style>
+        /* 이 페이지에서만 사용되는 css를 작성 */
+        #login-box {
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            margin-top: 150px;
+            margin-bottom: 150px;
+            background-color: black;
+            opacity: 0.9;
+        }
+
+        #login-box input{
+            display: block;
+            padding: 10px; 
+            height: 30px;
+            width: 300px;            
+            margin: 20px auto;            
+        }
+
+
+        #login-box-title {
+            text-align: center;
+            color: white;
+            
+            font-size: 3rem;   
+            padding: 30px;         
+            padding-bottom: 15px;         
+        }
+
+        #save-id-div {
+            height: 30px;
+            width: 320px;     
+            margin:  auto;            
+        }
+
+        #save-id-div>label {
+            color: white;
+            /* line-height: 30px; */
+        }
+
+        
+
+        input#save-id {            
+            display: inline-block;
+            /* padding: 10px;              */
+            height: 16px;
+            width: 16px; 
+            margin: 0 0 0 10px;           
+            border: 1px solid #bcbcbc;
+            cursor: pointer;
+            /* line-height: 30px; */
+            /* margin: 20px auto;             */
+        }
+
+        #login-box-btn {
+            text-align: center;
+            width: 300px;
+            color: white;
+            font-size: 2.5rem;   
+            background-color: #333333;         
+
+            padding: 10px;
+            margin: auto;            
+        }
+
+        #login-func, #login-func a{
+            color: lightgray;
+            font-size: 0.7rem;
+            text-align: center;
+            margin: auto;
+            width: 300px;
+            margin: auto;
+            margin-top: 16px;
+        }
+        #login-func li{
+            width: 100px;
+            float: left;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!-- 바뀌지 않는 header 부분 -->
+            <div id="header-left"> 
+                <ul>
+                    <li><img src="https://freeiconshop.com/wp-content/uploads/edd/apple-flat.png" alt="">  </li>
+                    <li><h2> Apple  </h2></li>
+                </ul>
+            </div>
+            <div id="header-right">
+                <!-- <div id="header-right-menu"> -->
+                    <ul>
+                        <li><a href="./index.html">홈</a> </li>
+                        <li><a href="./login.html">로그인</a></li>
+                        <li><a href="./register1.html">회원가입</a></li>                    
+                        <li>
+                            <input type="text" placeholder="search">
+                            <img src="https://steelfort.co.nz/themes/steelfort/images/icons/search-icon.png" alt="">                                   
+                        </li>
+                    </ul>
+                <!-- </div> -->
+                <!-- <div id="header-right-search">
+                </div> -->
+
+            </div>
+        </header>
+        <nav>
+            <!-- 바뀌지 않는 menu 부분 -->
+            <ul>
+                <li>ABOUT  </li>  
+                <li>GALLERY</li>  
+                <li>OFFICE </li>  
+                <li>SERVICE</li>  
+                <li>CONTACT</li>                
+            </ul>
+        </nav>
+
+
+        <div id="content">
+            <!-- 바뀌는 컨텐츠 부분 -->
+            <form>
+                <div id="login-box">
+                    <div id="login-box-title">Account</div>
+                    <div>                
+                        <input type="text" id="user_id" placeholder="Email ID">
+                        <input type="password" id="user_password" placeholder="Password">
+                    </div>
+                    <div id="save-id-div">
+                        <input type="checkbox" id="save-id">
+                        <label for="save-id">아이디 저장</label>
+                    </div>
+                    
+                    
+                    <a href=""><div id="login-box-btn"> Log in </div>           </a>
+                    <div id="login-func">
+                        <ul>
+                            <li><a href="./register1.html">회원가입</a> </li>
+                            <li><a href=""> 아이디 찾기</a></li>
+                            <li><a href="">비밀번호 찾기</a> </li>
+                        </ul>
+                    </div>     
+                    
+                </div>
+            </form>            
+
+        </div>
+
+
+        
+        <footer>
+            <div id="footer-left">
+                <ul>
+                    <li><img src="./images/home.png" alt="">    </li>   
+                    <li><img src="./images/google-plus.png" alt="">  </li>  
+                    <li><img src="./images/facebook-logo.png" alt=""></li> 
+                </ul>
+            </div>
+            <!-- 바뀌지 않는 footer 부분 -->
+            <div id="footer-right">
+                <ul>
+                    <li><img src="./images/telephone-of-old-design.png" alt=""> 031-899-9100</li>
+                    <li>㈜웹퍼블리셔반 대표이사 김윤경 사업자번호 222-88-66666</li>
+                    <li>경기도 용인시 기흥구 용구대로 2311 경기도여성능력개발센타</li>
+                    <li>Copyright © ACG Inc. All Rights Reserved</li>
+                </ul>
+            </div>
+            
+        </footer>
+    </div>
+</body>
+
+</html>
