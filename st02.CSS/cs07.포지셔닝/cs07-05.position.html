@@ -1,9 +1,42 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>position</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div#wrap>div {
+            height: 50px;
+            margin: 0 10px;
+            /* width: 150px; */
+        }
+
+        div#pos1 {
+            background-color: greenyellow;
+        }
+
+        div#pos2 {
+            background-color: khaki;            
+        }
+
+        div#pos3 {
+            background-color: indianred;
+        }
+        
+        div#pos2 {            
+            position: absolute; 
+            left: 200px; /* x축 */
+            top: 200px; /* y축 */
+        }
+
+    </style>
 </head>
+
 <body>
     <div id="wrap">
         <div id="pos1">첫번째</div>
@@ -11,4 +44,5 @@
         <div id="pos3">세번째</div>
     </div>
 </body>
-</html>
+
+</html>

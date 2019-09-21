@@ -2,7 +2,36 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">    
-	<title>display flex</title>
+    <title>display flex</title>
+    <style>
+        * {padding: 0px; margin: 0px;}
+        html, body {
+            height: 100%;
+        }
+        /* 
+        부모에 flex를 설정 
+        flex를 수직으로 설정 : flex-direction
+        */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        body>div {
+            flex-shrink: 0;
+        }
+
+        div.div1 {
+            background-color: yellow;
+        }
+        div.div2 {
+            background-color: orange;
+            flex-grow: 1; /* 남은 공간에 대해서만 채워지는 방식 */
+            /* height: 100%;  <== 이거는 부모의 height랑 동일하게 되기 때문에 계산이 필요함 */ 
+            
+        }
+    
+    </style>
 </head>
 
 <body>
@@ -19,4 +48,4 @@
     </div>
 </body>
 
-</html>
+</html>

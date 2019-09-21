@@ -3,6 +3,19 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {margin: 0px; padding: 0px;}
+        div.col-container {
+            display: inline-block;
+            width: 100%;
+        }
+
+        /* table-cell 은 최신브라우져에서만 사용가능 */
+        div.col-container > div.col {
+            display: table-cell;              
+            padding: 20px; 
+        }
+    </style>
 </head>
 
 <body>
@@ -36,4 +49,4 @@
 
 </body>
 
-</html>
+</html>

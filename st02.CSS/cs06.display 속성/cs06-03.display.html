@@ -1,32 +1,70 @@
 <!doctype html>
 <html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <title>display 속성</title>
-    </head>
-    <body>
-        <h2>display 속성</h2>
 
-        <div id="inlineblock">
-            <nav>
-                <ul>
-                    <li><a href="#">애완견 종류</a></li>
-                    <li><a href="#">입양하기</a></li>
-                    <li><a href="#">건강돌보기</a></li>
-                    <li><a href="#">더불어살기</a></li>
-                </ul>
-            </nav>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <title>display 속성</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
 
-        <div id="inline">
-            <img src="../images/pic1.jpg">
-            <img src="../images/pic2.jpg">
-            <img src="../images/pic3.jpg">
-        </div>
-        <div id="block">
-            <img src="../images/pic1.jpg">
-            <img src="../images/pic2.jpg">
-            <img src="../images/pic3.jpg">
-        </div>
-    </body>
-</html>
+        div>nav {
+            background-color: aquamarine;
+            padding: 5px 0 5px 0;
+        }
+
+        div#inlineblock li {
+            list-style-type: none;
+            display: inline-block;
+            width: 120px;
+            background-color: lightcoral;
+        }
+
+        div#inlineblock li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* 테두리 */
+        div#block,
+        div#inline {
+            border: 1px solid grey;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        div#block img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>display 속성</h2>
+
+    <div id="inlineblock">
+        <nav>
+            <ul>
+                <li><a href="#">애완견 종류</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어살기</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="inline">
+        <img src="../images/pic1.jpg">
+        <img src="../images/pic2.jpg">
+        <img src="../images/pic3.jpg">
+    </div>
+    <div id="block">
+        <img src="../images/pic1.jpg">
+        <img src="../images/pic2.jpg">
+        <img src="../images/pic3.jpg">
+    </div>
+</body>
+
+</html>

@@ -1,14 +1,83 @@
 <!doctype html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <title>display 속성</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body>div {
+            margin: 10px;
+        }
+
+        div {
+            height: 100px;
+        }       
+
+        div>div {
+            width: 100px;
+            height: 40px;
+            border: 1px solid grey;
+        }
+
+        div.ex1 {
+            background-color: red;
+        }
+
+        div.ex2 {
+            background-color: orange;
+        }
+
+        div.ex3 {
+            background-color: green;
+        }
+
+        /* float를 사용해서 수평으로 */
+        div#container-float>div {
+            float: left;
+            
+        }
+
+        div#container-float>div::after {
+            clear: both;
+            display: block;
+            content: '';
+        }
+
+        /* display를 사용해서 수평으로 */
+        div#container-display div  {
+            display: inline-block;
+        }
+
+        /* flex를 사용해서 수평으로 */
+        div#container-flex  {
+            display: flex;
+        }
+        
+
+    </style>
 </head>
+
 <body>
-    <div id="container">
+    <div id="container-float">
+        <div class="ex1">첫번째</div>
+        <div class="ex2">두번째</div>
+        <div class="ex3">세번째</div>
+    </div>
+    <div id="container-display">
+        <div class="ex1">첫번째</div>
+        <div class="ex2">두번째</div>
+        <div class="ex3">세번째</div>
+    </div>
+    <div id="container-flex">
         <div class="ex1">첫번째</div>
         <div class="ex2">두번째</div>
         <div class="ex3">세번째</div>
     </div>
 </body>
-</html>
+
+</html>
